@@ -64,3 +64,23 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+---
+
+## Project Setup and Observations
+
+### Scaffolding Steps
+
+1.  **Navigate to Project Directory**: Opened the terminal and navigated to `prodev-mobile-app-0x00`.
+2.  **Initialize Expo Project**: Ran `npx create-expo-app@latest .` to initialize a new Expo project using the latest Expo Router template. (Note: This step was already completed by the user.)
+3.  **Modify Home Screen**: Edited `app/index.tsx` to change the default text "Edit app/index.tsx to edit this screen." to "** First App Created**".
+4.  **Configure JSX**: Added `"jsx": "react-native"` to `compilerOptions` in `tsconfig.json` to resolve JSX related TypeScript errors.
+5.  **Run Application**: Started the Expo development server with `npx expo start --port 8082`.
+
+### Observations from `reset-project` command
+
+When `npm run reset-project` is executed, the following actions occur:
+
+- The existing `app`, `components`, `hooks`, `constants`, and `scripts` directories are moved into a new `app-example` directory.
+- A new, blank `app` directory is created.
+- New `app/index.tsx` and `app/_layout.tsx` files are created within the new `app` directory, effectively resetting the project to a fresh state.
